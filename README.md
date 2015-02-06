@@ -12,4 +12,10 @@ canvas要素をラップするstageを作り、DisplayObjectインスタンス�
 
 EaselJSがサポートするDisplayObject
 * Images - ```Bitmap```
-* Vector - ```Shape``` ```Graphics```
+* Vector画像 - ```Shape``` ```Graphics```
+* アニメートされるビットマップ画像 - ```SpriteSheet``` ```Sprite```
+* シンプルなテキストインスタンス - ```Text```
+* 他のDisplayObjectを内包するコンテナ - ```Container```
+* HTMLのDOM要素を操作する - ```DOMElement```
+
+すべてのDisplayObjectはstageの子として加えられ、canvas内に描かれる。
