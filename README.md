@@ -10,7 +10,7 @@ HTML5 Canvasでリッチな表現をするための近道
 
 canvas要素をラップするstageを作り、DisplayObjectインスタンスをstageの子として加える。
 
-EaselJSがサポートするDisplayObject
+### EaselJSがサポートするDisplayObject
 * Images - ```Bitmap```
 * Vector画像 - ```Shape``` ```Graphics```
 * アニメートされるビットマップ画像 - ```SpriteSheet``` ```Sprite```
