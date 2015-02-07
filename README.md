@@ -45,3 +45,47 @@ stage.addChild(circle);
 // Update stage will render next frame
 stage.update();
 ```
+
+*** シンプルなインタラクションの例 ***
+
+```javascript
+
+displayObject.addEventListener('click', handleClick);
+
+function handleClick(event){
+	// Click happenened
+}
+
+displayObject.addEventListener('mousedown', handlePress);
+
+function handlePress(event){
+	// A mouse press happened
+	// Listen for mouse move while the mouse is down
+	event.addEventListener('mousemove', handleMove);
+}
+
+function handleMove(event){
+	// Check out the DragAndDrop example in GitHub for more
+}
+
+```
+
+*** シンプルなアニメーションの例 ***
+
+```javascript
+// Update stage will render next frame
+createjs.Ticker.addEventListener('tick', handleTick);
+
+function handleTick(){
+
+	// Circle will move 10 units to the right
+	circle.x += 10;
+
+	// Will cause the circle to wrap back
+	if(circle.x > stage.canvas.width){
+		circle.x = 0;
+	}
+
+	stage.update();
+}
+```
