@@ -20,11 +20,11 @@ canvas要素をラップするstageを作り、DisplayObjectインスタンス�
 
 すべてのDisplayObjectはstageの子として加えられ、canvas内に描かれる。
 
-** ユーザーインタラクション **
+**ユーザーインタラクション**
 
 stageの中のすべてのdisplay object（DOMElementを除く）はmouseやtouchを使って操作が可能。EaselJSは、```hover```、```press```、```release```がサポートしていて、ドラッグ＆ドロップを使い易いようになっている。
 
-** シンプルな例 **
+**シンプルな例**
 
 EaselJSの描画APIを使用して、```Stage```上にどのように```Shape```を生成して配置しているかの例。
 
@@ -46,7 +46,7 @@ stage.addChild(circle);
 stage.update();
 ```
 
-** シンプルなインタラクションの例 **
+**シンプルなインタラクションの例**
 
 ```javascript
 
@@ -70,7 +70,7 @@ function handleMove(event){
 
 ```
 
-** シンプルなアニメーションの例 **
+**シンプルなアニメーションの例**
 
 ```javascript
 // Update stage will render next frame
