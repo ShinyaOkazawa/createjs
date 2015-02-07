@@ -89,3 +89,16 @@ function handleTick(){
 	stage.update();
 }
 ```
+
+**他の特徴**
+
+EaselJSは下記をサポートしている。
+* Canvasの特徴である```Shadow```や```CompositeOperation```
+* ```Ticker```
+* Filter類、```ColorMatrixFilter```、```AlphaMaskFilter```、```AlphaMapFilter```、```BlurFilter```などなど
+* ```ButtonHelper```ユーティリティはインタラクティブなボタンを簡単に作ることができる
+* ```SpriteSheetUtils```、```SpriteSheetBuilder```は```SpriteSheet```の機能性を実行時に組み立て、操作するのを補助する
+
+**ブラウザサポート**
+canvasをサポートするブラウザであれば、EaselJSはサポートされる。(IE9以上)
+[canvasが利用可能なブラウザ](http://caniuse.com/#feat=canvas)
