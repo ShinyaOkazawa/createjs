@@ -104,3 +104,5 @@ EaselJSは下記をサポートしている。
 canvasをサポートするブラウザであれば、EaselJSはサポートされる。(IE9以上)
 
 [canvasが利用可能なブラウザ](http://caniuse.com/#feat=canvas)
+
+* * *
