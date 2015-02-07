@@ -100,5 +100,7 @@ EaselJSは下記をサポートしている。
 * ```SpriteSheetUtils```、```SpriteSheetBuilder```は```SpriteSheet```の機能性を実行時に組み立て、操作するのを補助する
 
 **ブラウザサポート**
+
 canvasをサポートするブラウザであれば、EaselJSはサポートされる。(IE9以上)
+
 [canvasが利用可能なブラウザ](http://caniuse.com/#feat=canvas)
