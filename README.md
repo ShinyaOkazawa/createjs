@@ -134,3 +134,62 @@ TweenJSライブラリは、シンプルでパワフルなトゥイーンイン�
 	createjs.Ticker.addEventListener('tick', stage);
 	
 ```
+
+# 01 画像をトゥイーンアニメーションさせる
+
+## 画像ファイルの読み込み、canvas上に反映
+
+createjsをCDNで読み込む。
+
+```
+
+<script src="https://code.createjs.com/createjs-2014.12.12.min.js"></script
+
+```
+
+body要素にcanvasを加える。
+
+```
+
+<canvas id="canvas" width="500" height="300"></canvas>
+
+```
+
+EaselJSはcanvas上にStageオブジェクトを作成する。
+
+```
+
+stage = new createjs.Stage(canvas);
+
+```
+
+PreloadJSを利用して、画像を読み込み、stage上に画像を表示させる。
+
+```
+
+var queue = new createjs.LoadQueue(false);
+
+queue.on('complete', draw);
+queue.loadManifest([
+	{id: 'img', src: 'circle.png'}
+]);
+
+function draw(){
+	var bitmap;
+	var image = queue.getResult('img');
+
+	bitmap = new createjs.Bitmap(image);
+
+	stage.addChild(bitmap);
+	stage.update();
+}
+			
+```
+
+**注意点**
+ここでのdraw()関数は関数式で書くと動作しない。関数宣言で行う。
+理由としては、関数式で書くと、「関数の巻き上げ」が起こらないため。
+
+```queue.on('complete', draw)```の後にdraw関数があるため関数式ではエラーになる。
+
+
