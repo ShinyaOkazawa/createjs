@@ -142,31 +142,24 @@ TweenJSライブラリは、シンプルでパワフルなトゥイーンイン�
 createjsをCDNで読み込む。
 
 ```
-
 <script src="https://code.createjs.com/createjs-2014.12.12.min.js"></script
-
 ```
 
 body要素にcanvasを加える。
 
 ```
-
 <canvas id="canvas" width="500" height="300"></canvas>
-
 ```
 
 EaselJSはcanvas上にStageオブジェクトを作成する。
 
 ```
-
 stage = new createjs.Stage(canvas);
-
 ```
 
 PreloadJSを利用して、画像を読み込み、stage上に画像を表示させる。
 
 ```
-
 var queue = new createjs.LoadQueue(false);
 
 queue.on('complete', draw);
@@ -183,7 +176,6 @@ function draw(){
 	stage.addChild(bitmap);
 	stage.update();
 }
-			
 ```
 
 **注意点**
